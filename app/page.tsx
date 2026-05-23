@@ -288,26 +288,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Testimonial ── */}
-      <ScrollReveal>
-        <section className="max-w-3xl mx-auto px-5 py-20 text-center">
-          <div className="flex justify-center gap-1 mb-5">
-            {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-[#D95F2A] text-lg">★</span>
-            ))}
-          </div>
-          <blockquote
-            className="text-2xl md:text-3xl font-light italic text-[#F0E0C0] leading-relaxed mb-5"
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
-          >
-            &ldquo;The flavors were so rich and authentic — every bite felt like a
-            celebration. Our whole family kept going back for more.&rdquo;
-          </blockquote>
-          <p className="text-xs tracking-widest uppercase text-[#B09070]">
-            — Customer, Dallas TX
-          </p>
-        </section>
-      </ScrollReveal>
 
       {/* ── CTA ── */}
       <section className="bg-[#1A1008] py-20">
