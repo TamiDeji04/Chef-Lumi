@@ -156,12 +156,6 @@ export default function Home() {
             need something to bring to a dinner — I&apos;ve got you. Place your order
             and I&apos;ll have it ready for pickup or delivery.
           </p>
-          <Link
-            href="/about"
-            className="inline-flex items-center gap-2 text-sm text-[#D95F2A] font-medium hover:gap-3 transition-all"
-          >
-            Read my story <ArrowRight size={14} />
-          </Link>
         </ScrollReveal>
       </section>
 
