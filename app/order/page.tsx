@@ -149,6 +149,9 @@ export default function OrderPage() {
               <p className="text-xs text-[#B09070] text-center">
                 I&apos;ll confirm your order within a few hours. Remember — 24–48 hrs notice needed.
               </p>
+              <p className="text-xs text-[#B09070] text-center">
+                Payment details (Cash App / Zelle) will be sent once your order is confirmed.
+              </p>
             </form>
           </div>
         </ScrollReveal>
@@ -229,6 +232,45 @@ export default function OrderPage() {
                 All food is made fresh to order. Place your order at least{" "}
                 <strong className="text-[#D95F2A]">24–48 hours in advance</strong> to guarantee availability.
               </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={400}>
+            <div className="bg-[#3A2410] rounded-3xl border border-[#4E3018] p-7">
+              <p className="text-xs font-medium tracking-[0.2em] uppercase text-[#D95F2A] mb-1">
+                How to Pay
+              </p>
+              <p className="text-sm text-[#B09070] mb-5 leading-relaxed">
+                Payment is sent after your order is confirmed — not upfront.
+              </p>
+
+              <div className="space-y-3">
+                {/* Cash App */}
+                <div className="flex items-center gap-3 bg-[#2D2010] rounded-xl px-4 py-3">
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: "#00D632" }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                      <path d="M15.42 13.1c-.19.55-.72.9-1.3.9H9.88c-.58 0-1.11-.35-1.3-.9l-.38-1.1H5.5l.9 2.6c.38 1.1 1.43 1.8 2.6 1.8h6c1.17 0 2.22-.7 2.6-1.8l.9-2.6h-2.7l-.38 1.1zM20 8.5h-2.34l-.9-2.6C16.38 4.8 15.33 4.1 14.16 4.1h-4.32c-1.17 0-2.22.7-2.6 1.8L6.34 8.5H4a2 2 0 0 0-2 2v3h20v-3a2 2 0 0 0-2-2zm-5.84-1.4c.19-.55.72-.9 1.3-.9H10.54c-.58 0-1.11.35-1.3.9L8.86 8.5h6.68l-.38-1.4z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-[#B09070] mb-0.5">Cash App</p>
+                    <p className="text-sm font-medium text-[#F0E0C0]">$YourCashtag</p>
+                  </div>
+                </div>
+
+                {/* Zelle */}
+                <div className="flex items-center gap-3 bg-[#2D2010] rounded-xl px-4 py-3">
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: "#6D1ED4" }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                      <path d="M4 5h10.5L4 16.5V19h16v-2H9.5L20 5.5V3H4v2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-[#B09070] mb-0.5">Zelle</p>
+                    <p className="text-sm font-medium text-[#F0E0C0]">(XXX) XXX-XXXX</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </ScrollReveal>
         </div>
