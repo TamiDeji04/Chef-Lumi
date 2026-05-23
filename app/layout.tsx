@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -17,10 +17,11 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Chef Lù | Authentic Nigerian Cuisine — Dallas & Houston",
+  title: "Chef Lù | Authentic Nigerian Food — Dallas & Houston",
   description:
-    "Chef Lù brings the rich, bold flavors of authentic Nigerian cuisine to your events and table. Luxury catering, food trays, and personal chef services across Dallas and Houston, Texas.",
-  keywords: "Nigerian catering Dallas, Nigerian catering Houston, Nigerian food Texas, Chef Lu, lumii.cooks, jollof rice catering, Nigerian chef Dallas",
+    "Order freshly made Nigerian food trays from Chef Lù. Jollof rice, fried rice, stew, and more — delivered or picked up in Dallas and Houston, Texas.",
+  keywords:
+    "Nigerian food Dallas, Nigerian food Houston, jollof rice delivery Texas, Nigerian food delivery, lumii.cooks, Chef Lu",
 };
 
 export default function RootLayout({
@@ -29,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${cormorant.variable}`}>
-      <body className="min-h-screen flex flex-col bg-[#0B0806] text-[#F5EFE0]">
+    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+      <body className="min-h-screen flex flex-col bg-[#F2E3CC] text-[#1A1008]">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
