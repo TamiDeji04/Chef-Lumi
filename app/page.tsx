@@ -7,25 +7,25 @@ const dishes = [
   {
     name: "Party Jollof Rice",
     desc: "Smoky, perfectly seasoned party jollof — the one your guests will be talking about.",
-    img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1638436684761-7e59f8a9072f?w=500&q=80",
     tag: "Signature",
   },
   {
     name: "Assorted Stew",
     desc: "Rich, slow-cooked Nigerian stew with assorted proteins. Deep flavour, every time.",
-    img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1754342580226-86035d637010?w=500&q=80",
     tag: "Fan Fave",
   },
   {
     name: "Fried Rice",
     desc: "Vibrant Nigerian fried rice — colourful, fragrant, and loaded with goodness.",
-    img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1604329756574-bda1f2cada6f?w=500&q=80",
     tag: "Classic",
   },
   {
     name: "Sweet Plantain",
     desc: "Golden, caramelised dodo — the perfect side. Nobody stops at one piece.",
-    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1762941904142-9d91ca413e66?w=500&q=80",
     tag: "Side",
   },
 ];
@@ -269,11 +269,11 @@ export default function Home() {
       <section className="bg-[#2A1808] py-3 overflow-hidden">
         <div className="flex gap-3 px-3">
           {[
-            "https://images.unsplash.com/photo-1555244162-803834f70033?w=400&q=80",
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80",
-            "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80",
-            "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80",
-            "https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=400&q=80",
+            "https://images.unsplash.com/photo-1638436684761-7e59f8a9072f?w=400&q=80",
+            "https://images.unsplash.com/photo-1763048443535-1243379234e2?w=400&q=80",
+            "https://images.unsplash.com/photo-1604329756574-bda1f2cada6f?w=400&q=80",
+            "https://images.unsplash.com/photo-1762941904142-9d91ca413e66?w=400&q=80",
+            "https://images.unsplash.com/photo-1754342580226-86035d637010?w=400&q=80",
           ].map((src, i) => (
             <div key={i} className="relative w-48 h-48 flex-shrink-0 rounded-xl overflow-hidden">
               <Image src={src} alt={`Food ${i + 1}`} fill className="object-cover" />

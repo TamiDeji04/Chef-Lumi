@@ -14,37 +14,37 @@ const dishes = [
   {
     name: "Party Jollof Rice",
     desc: "The classic — smoky, rich, and seasoned just right. Cooked the proper way over fire.",
-    img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1638436684761-7e59f8a9072f?w=500&q=80",
     tag: "Signature",
   },
   {
     name: "Nigerian Fried Rice",
     desc: "Vibrant, fragrant fried rice packed with vegetables and liver. Colourful and delicious.",
-    img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1604329756574-bda1f2cada6f?w=500&q=80",
     tag: "Classic",
   },
   {
     name: "Assorted Stew",
     desc: "A rich, slow-cooked tomato stew with assorted proteins — beef, chicken, goat.",
-    img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1754342580226-86035d637010?w=500&q=80",
     tag: "Fan Fave",
   },
   {
     name: "Egusi Soup",
     desc: "Traditional melon seed soup with leafy greens, crayfish, palm oil, and assorted meat.",
-    img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1763048443535-1243379234e2?w=500&q=80",
     tag: "Traditional",
   },
   {
     name: "Sweet Plantain (Dodo)",
     desc: "Golden, caramelised fried plantain. The perfect side to literally everything.",
-    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1762941904142-9d91ca413e66?w=500&q=80",
     tag: "Side",
   },
   {
     name: "Moi Moi",
     desc: "Steamed bean pudding with peppers, onions, and protein. Silky, savoury, satisfying.",
-    img: "https://images.unsplash.com/photo-1555244162-803834f70033?w=500&q=80",
+    img: "https://images.unsplash.com/photo-1665332561290-cc6757172890?w=500&q=80",
     tag: "Side",
   },
 ];
@@ -78,8 +78,8 @@ export default function MenuPage() {
       {/* ── Hero ── */}
       <section className="relative h-64 md:h-80 flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1920&q=80"
-          alt="Jollof rice"
+          src="https://images.unsplash.com/photo-1638436684761-7e59f8a9072f?w=1920&q=80"
+          alt="Nigerian jollof rice with chicken"
           fill
           className="object-cover"
           priority
