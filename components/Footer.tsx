@@ -21,7 +21,7 @@ function TikTokIcon({ size = 16 }: { size?: number }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A1008] text-[#4E3018]">
+    <footer className="bg-[#1A1008] text-[#B09070]">
       <div className="max-w-6xl mx-auto px-5 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
@@ -62,7 +62,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="text-xs tracking-[0.18em] uppercase text-[#4E3018] mb-5 font-medium">
+            <h4 className="text-xs tracking-[0.18em] uppercase text-[#B09070] mb-5 font-medium">
               Pages
             </h4>
             <ul className="space-y-3">
@@ -75,7 +75,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-sm text-[#B09070] hover:text-[#4E3018] transition-colors"
+                    className="text-sm text-[#B09070] hover:text-[#F0E0C0] transition-colors"
                   >
                     {label}
                   </Link>
@@ -86,7 +86,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs tracking-[0.18em] uppercase text-[#4E3018] mb-5 font-medium">
+            <h4 className="text-xs tracking-[0.18em] uppercase text-[#B09070] mb-5 font-medium">
               Get in Touch
             </h4>
             <ul className="space-y-4">
@@ -98,7 +98,7 @@ export default function Footer() {
                 <Mail size={14} className="text-[#D95F2A] mt-0.5 shrink-0" />
                 <a
                   href="mailto:lumii.cooks@gmail.com"
-                  className="text-sm text-[#B09070] hover:text-[#4E3018] transition-colors"
+                  className="text-sm text-[#B09070] hover:text-[#F0E0C0] transition-colors"
                 >
                   lumii.cooks@gmail.com
                 </a>

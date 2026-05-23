@@ -185,9 +185,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, i) => (
               <ScrollReveal key={step.num} delay={i * 120}>
-                <div className="bg-[#F5E8D2] rounded-2xl p-8 border border-[#4E3018]">
+                <div className="bg-[#3A2410] rounded-2xl p-8 border border-[#4E3018]">
                   <span
-                    className="text-5xl font-light text-[#4E3018] block mb-4 leading-none"
+                    className="text-5xl font-light text-[#D95F2A] block mb-4 leading-none"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
                     {step.num}

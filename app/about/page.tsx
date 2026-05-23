@@ -108,7 +108,7 @@ export default function AboutPage() {
               },
             ].map((v, i) => (
               <ScrollReveal key={v.title} delay={i * 100}>
-                <div className="bg-[#F5E8D2] rounded-2xl p-7 border border-[#4E3018]">
+                <div className="bg-[#3A2410] rounded-2xl p-7 border border-[#4E3018]">
                   <div className="w-8 h-1 bg-[#D95F2A] rounded-full mb-5" />
                   <h3
                     className="text-xl font-medium text-[#F0E0C0] mb-2"

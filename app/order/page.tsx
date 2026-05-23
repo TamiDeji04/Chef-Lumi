@@ -46,7 +46,7 @@ export default function OrderPage() {
       <section className="max-w-6xl mx-auto px-5 pb-24 grid grid-cols-1 lg:grid-cols-5 gap-14">
         {/* Form */}
         <ScrollReveal className="lg:col-span-3">
-          <div className="bg-[#F5E8D2] rounded-3xl border border-[#4E3018] p-8 md:p-10">
+          <div className="bg-[#3A2410] rounded-3xl border border-[#4E3018] p-8 md:p-10">
             <h2
               className="text-2xl font-medium text-[#F0E0C0] mb-1"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
@@ -168,7 +168,7 @@ export default function OrderPage() {
                   href="mailto:lumii.cooks@gmail.com"
                   className="flex items-center gap-3 group"
                 >
-                  <div className="w-9 h-9 rounded-full bg-[#F5E8D2] border border-[#4E3018] flex items-center justify-center group-hover:border-[#D95F2A] transition-colors">
+                  <div className="w-9 h-9 rounded-full bg-[#3A2410] border border-[#4E3018] flex items-center justify-center group-hover:border-[#D95F2A] transition-colors">
                     <Mail size={14} className="text-[#D95F2A]" />
                   </div>
                   <span className="text-sm text-[#B09070] group-hover:text-[#F0E0C0] transition-colors">
@@ -176,13 +176,13 @@ export default function OrderPage() {
                   </span>
                 </a>
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-[#F5E8D2] border border-[#4E3018] flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-[#3A2410] border border-[#4E3018] flex items-center justify-center">
                     <MapPin size={14} className="text-[#D95F2A]" />
                   </div>
                   <span className="text-sm text-[#B09070]">Dallas–Fort Worth & Houston, TX</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-[#F5E8D2] border border-[#4E3018] flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-[#3A2410] border border-[#4E3018] flex items-center justify-center">
                     <Clock size={14} className="text-[#D95F2A]" />
                   </div>
                   <span className="text-sm text-[#B09070]">24–48 hrs notice required</span>
@@ -204,7 +204,7 @@ export default function OrderPage() {
                   href="https://www.instagram.com/lumii.cooks"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 bg-[#2D2010] rounded-xl px-4 py-3 text-[#4E3018] hover:bg-[#3A2B15] transition-colors"
+                  className="flex items-center gap-3 bg-[#2D2010] rounded-xl px-4 py-3 text-[#B09070] hover:bg-[#3A2B15] hover:text-[#F0E0C0] transition-colors"
                 >
                   <InstagramIcon size={16} />
                   <span className="text-sm">@lumii.cooks on Instagram</span>
@@ -213,7 +213,7 @@ export default function OrderPage() {
                   href="https://www.tiktok.com/@lumii.cooks"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 bg-[#2D2010] rounded-xl px-4 py-3 text-[#4E3018] hover:bg-[#3A2B15] transition-colors"
+                  className="flex items-center gap-3 bg-[#2D2010] rounded-xl px-4 py-3 text-[#B09070] hover:bg-[#3A2B15] hover:text-[#F0E0C0] transition-colors"
                 >
                   <TikTokIcon size={16} />
                   <span className="text-sm">@lumii.cooks on TikTok</span>

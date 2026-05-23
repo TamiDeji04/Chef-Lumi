@@ -179,7 +179,7 @@ export default function MenuPage() {
           <div className="space-y-6">
             {faqs.map((faq, i) => (
               <ScrollReveal key={faq.q} delay={i * 80}>
-                <div className="bg-[#F5E8D2] rounded-2xl p-6 border border-[#4E3018]">
+                <div className="bg-[#3A2410] rounded-2xl p-6 border border-[#4E3018]">
                   <h4
                     className="text-lg font-medium text-[#F0E0C0] mb-2"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
