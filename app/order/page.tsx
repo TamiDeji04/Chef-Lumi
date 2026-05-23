@@ -150,7 +150,7 @@ export default function OrderPage() {
                 I&apos;ll confirm your order within a few hours. Remember — 24–48 hrs notice needed.
               </p>
               <p className="text-xs text-[#B09070] text-center">
-                Payment details (Cash App / Zelle) will be sent once your order is confirmed.
+                A <strong className="text-[#F0E0C0]">50% deposit</strong> is required to lock in your order. The remaining 50% is paid on delivery or pickup.
               </p>
             </form>
           </div>
@@ -241,10 +241,27 @@ export default function OrderPage() {
                 How to Pay
               </p>
               <p className="text-sm text-[#B09070] mb-5 leading-relaxed">
-                Payment is sent after your order is confirmed — not upfront.
+                A 50% deposit locks in your order. The rest is paid when your food arrives.
               </p>
 
-              <div className="space-y-3">
+              {/* Steps */}
+              <ol className="space-y-3 mb-5">
+                {[
+                  { n: "1", text: "Submit your order form" },
+                  { n: "2", text: "I confirm & send you my payment details" },
+                  { n: "3", text: "You send the 50% deposit to lock it in" },
+                  { n: "4", text: "Remaining 50% paid on delivery or pickup" },
+                ].map((s) => (
+                  <li key={s.n} className="flex items-start gap-3">
+                    <span className="w-5 h-5 rounded-full bg-[#D95F2A]/15 text-[#D95F2A] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                      {s.n}
+                    </span>
+                    <span className="text-sm text-[#B09070] leading-snug">{s.text}</span>
+                  </li>
+                ))}
+              </ol>
+
+              <div className="border-t border-[#4E3018] pt-5 space-y-3">
                 {/* Cash App */}
                 <div className="flex items-center gap-3 bg-[#2D2010] rounded-xl px-4 py-3">
                   <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: "#00D632" }}>
