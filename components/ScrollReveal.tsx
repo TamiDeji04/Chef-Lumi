@@ -38,7 +38,7 @@ export default function ScrollReveal({
     return () => observer.disconnect();
   }, [delay]);
 
-  const initialTransform = direction === "up" ? "translateY(28px)" : "translateY(0)";
+  const initialTransform = direction === "up" ? "translateY(36px)" : "translateY(0)";
 
   return (
     <div
@@ -47,7 +47,7 @@ export default function ScrollReveal({
       style={{
         opacity: 0,
         transform: initialTransform,
-        transition: `opacity 0.65s ease-out, transform 0.65s ease-out`,
+        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)`,
       }}
     >
       {children}

@@ -4,7 +4,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ScrollReset from "@/components/ScrollReset";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
       <body className="min-h-screen flex flex-col bg-[#1E1005] text-[#F0E0C0]">
-        <ScrollReset />
+        <SmoothScroll />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
