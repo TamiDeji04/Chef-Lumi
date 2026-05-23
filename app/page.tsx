@@ -60,8 +60,8 @@ export default function Home() {
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-[#F2E3CC]/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#F2E3CC]/90 via-[#F2E3CC]/50 to-transparent" />
+        <div className="absolute inset-0 bg-[#1E1005]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1E1005]/90 via-[#1E1005]/50 to-transparent" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-5 w-full">
           <div className="max-w-xl">
@@ -69,7 +69,7 @@ export default function Home() {
               Dallas & Houston, Texas
             </span>
             <h1
-              className="text-5xl md:text-6xl lg:text-7xl font-light text-[#1A1008] leading-[1.1] mb-5"
+              className="text-5xl md:text-6xl lg:text-7xl font-light text-[#F0E0C0] leading-[1.1] mb-5"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Real Nigerian
@@ -78,7 +78,7 @@ export default function Home() {
               <br />
               <em className="text-[#D95F2A] font-medium">fresh for you.</em>
             </h1>
-            <p className="text-base text-[#7A6855] leading-relaxed mb-8 max-w-sm">
+            <p className="text-base text-[#B09070] leading-relaxed mb-8 max-w-sm">
               Jollof rice, fried rice, stew and more — freshly made and ready
               for pickup or delivery. No stress, just good food.
             </p>
@@ -91,7 +91,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/menu"
-                className="px-7 py-3 rounded-full border border-[#D4B896] text-[#1A1008] text-sm font-medium hover:border-[#D95F2A] hover:text-[#D95F2A] transition-colors"
+                className="px-7 py-3 rounded-full border border-[#4E3018] text-[#F0E0C0] text-sm font-medium hover:border-[#D95F2A] hover:text-[#D95F2A] transition-colors"
               >
                 See Menu
               </Link>
@@ -110,7 +110,7 @@ export default function Home() {
           ].map(({ icon, text }) => (
             <div key={text} className="flex items-center justify-center gap-2.5 py-3 px-4">
               <span className="text-[#D95F2A]">{icon}</span>
-              <span className="text-xs text-[#7A6855] tracking-wide">{text}</span>
+              <span className="text-xs text-[#B09070] tracking-wide">{text}</span>
             </div>
           ))}
         </div>
@@ -140,18 +140,18 @@ export default function Home() {
             Hi, I&apos;m Chef Lù
           </p>
           <h2
-            className="text-4xl md:text-5xl font-light text-[#1A1008] leading-tight mb-5"
+            className="text-4xl md:text-5xl font-light text-[#F0E0C0] leading-tight mb-5"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             Nigerian food the way it&apos;s{" "}
             <em className="text-[#D95F2A]">supposed to taste.</em>
           </h2>
-          <p className="text-[#7A6855] leading-relaxed mb-4">
+          <p className="text-[#B09070] leading-relaxed mb-4">
             I&apos;m a solo cook based in Texas who makes authentic Nigerian food
             with genuine ingredients and real love. No shortcuts. No compromise.
             Just the kind of food that takes you right back home.
           </p>
-          <p className="text-[#7A6855] leading-relaxed mb-7">
+          <p className="text-[#B09070] leading-relaxed mb-7">
             Whether you&apos;re craving a full tray of jollof for the weekend or
             need something to bring to a dinner — I&apos;ve got you. Place your order
             and I&apos;ll have it ready for pickup or delivery.
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* ── How it works ── */}
-      <section className="bg-[#E8D0B0] py-20">
+      <section className="bg-[#2A1808] py-20">
         <div className="max-w-6xl mx-auto px-5">
           <ScrollReveal>
             <div className="text-center mb-14">
@@ -174,7 +174,7 @@ export default function Home() {
                 Super Simple
               </p>
               <h2
-                className="text-4xl md:text-5xl font-light text-[#1A1008]"
+                className="text-4xl md:text-5xl font-light text-[#F0E0C0]"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 How to Order
@@ -185,20 +185,20 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, i) => (
               <ScrollReveal key={step.num} delay={i * 120}>
-                <div className="bg-[#F5E8D2] rounded-2xl p-8 border border-[#D4B896]">
+                <div className="bg-[#F5E8D2] rounded-2xl p-8 border border-[#4E3018]">
                   <span
-                    className="text-5xl font-light text-[#D4B896] block mb-4 leading-none"
+                    className="text-5xl font-light text-[#4E3018] block mb-4 leading-none"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
                     {step.num}
                   </span>
                   <h3
-                    className="text-xl font-medium text-[#1A1008] mb-2"
+                    className="text-xl font-medium text-[#F0E0C0] mb-2"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
                     {step.title}
                   </h3>
-                  <p className="text-sm text-[#7A6855] leading-relaxed">{step.desc}</p>
+                  <p className="text-sm text-[#B09070] leading-relaxed">{step.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -226,7 +226,7 @@ export default function Home() {
                 On the Menu
               </p>
               <h2
-                className="text-4xl md:text-5xl font-light text-[#1A1008]"
+                className="text-4xl md:text-5xl font-light text-[#F0E0C0]"
                 style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
               >
                 A Taste of Nigeria
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {dishes.map((d, i) => (
             <ScrollReveal key={d.name} delay={i * 100}>
-              <div className="group rounded-2xl overflow-hidden border border-[#D4B896] bg-white">
+              <div className="group rounded-2xl overflow-hidden border border-[#4E3018] bg-[#3A2410]">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
                     src={d.img}
@@ -258,12 +258,12 @@ export default function Home() {
                 </div>
                 <div className="p-4">
                   <h4
-                    className="text-lg font-medium text-[#1A1008] mb-1"
+                    className="text-lg font-medium text-[#F0E0C0] mb-1"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
                     {d.name}
                   </h4>
-                  <p className="text-xs text-[#7A6855] leading-relaxed">{d.desc}</p>
+                  <p className="text-xs text-[#B09070] leading-relaxed">{d.desc}</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -272,7 +272,7 @@ export default function Home() {
       </section>
 
       {/* ── Gallery strip ── */}
-      <section className="bg-[#E8D0B0] py-3 overflow-hidden">
+      <section className="bg-[#2A1808] py-3 overflow-hidden">
         <div className="flex gap-3 px-3">
           {[
             "https://images.unsplash.com/photo-1555244162-803834f70033?w=400&q=80",
@@ -297,13 +297,13 @@ export default function Home() {
             ))}
           </div>
           <blockquote
-            className="text-2xl md:text-3xl font-light italic text-[#1A1008] leading-relaxed mb-5"
+            className="text-2xl md:text-3xl font-light italic text-[#F0E0C0] leading-relaxed mb-5"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             &ldquo;The flavors were so rich and authentic — every bite felt like a
             celebration. Our whole family kept going back for more.&rdquo;
           </blockquote>
-          <p className="text-xs tracking-widest uppercase text-[#7A6855]">
+          <p className="text-xs tracking-widest uppercase text-[#B09070]">
             — Customer, Dallas TX
           </p>
         </section>
@@ -319,7 +319,7 @@ export default function Home() {
             >
               Craving something good?
             </h2>
-            <p className="text-[#7A6855] mb-8 leading-relaxed">
+            <p className="text-[#B09070] mb-8 leading-relaxed">
               Place your order now — just give 24–48 hours notice and Chef Lù
               will have your food freshly made and ready.
             </p>
@@ -332,7 +332,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/menu"
-                className="px-8 py-3 rounded-full border border-[#2D2010] text-[#7A6855] text-sm font-medium hover:border-[#D95F2A] hover:text-[#D95F2A] transition-colors"
+                className="px-8 py-3 rounded-full border border-[#2D2010] text-[#B09070] text-sm font-medium hover:border-[#D95F2A] hover:text-[#D95F2A] transition-colors"
               >
                 View Menu
               </Link>

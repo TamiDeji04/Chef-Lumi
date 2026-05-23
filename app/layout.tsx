@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
-      <body className="min-h-screen flex flex-col bg-[#F2E3CC] text-[#1A1008]">
+      <body className="min-h-screen flex flex-col bg-[#1E1005] text-[#F0E0C0]">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

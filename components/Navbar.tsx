@@ -28,8 +28,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#F2E3CC] ${
-        scrolled || open ? "border-b border-[#D4B896]" : ""
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#1E1005] ${
+        scrolled || open ? "border-b border-[#4E3018]" : ""
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
@@ -41,7 +41,7 @@ export default function Navbar() {
           >
             Chef Lù
           </span>
-          <span className="text-[9px] tracking-[0.22em] text-[#7A6855] uppercase">
+          <span className="text-[9px] tracking-[0.22em] text-[#B09070] uppercase">
             Nigerian Cuisine
           </span>
         </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
               className={`text-sm tracking-wide transition-colors duration-200 ${
                 pathname === href
                   ? "text-[#D95F2A] font-medium"
-                  : "text-[#7A6855] hover:text-[#1A1008]"
+                  : "text-[#B09070] hover:text-[#F0E0C0]"
               }`}
             >
               {label}
@@ -71,7 +71,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-[#1A1008]"
+          className="md:hidden text-[#F0E0C0]"
           onClick={() => setOpen((o) => !o)}
           aria-label="Toggle menu"
         >
@@ -81,13 +81,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#F2E3CC] border-t border-[#D4B896] px-5 py-6 flex flex-col gap-5">
+        <div className="md:hidden bg-[#1E1005] border-t border-[#4E3018] px-5 py-6 flex flex-col gap-5">
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               className={`text-sm tracking-wide ${
-                pathname === href ? "text-[#D95F2A] font-medium" : "text-[#7A6855]"
+                pathname === href ? "text-[#D95F2A] font-medium" : "text-[#B09070]"
               }`}
             >
               {label}

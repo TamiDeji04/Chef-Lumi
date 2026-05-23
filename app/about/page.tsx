@@ -22,10 +22,10 @@ export default function AboutPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-[#F2E3CC]/70" />
+        <div className="absolute inset-0 bg-[#1E1005]/70" />
         <div className="relative z-10 max-w-6xl mx-auto px-5 pb-12 w-full">
           <h1
-            className="text-5xl md:text-6xl font-light text-[#1A1008]"
+            className="text-5xl md:text-6xl font-light text-[#F0E0C0]"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             About Me
@@ -51,23 +51,23 @@ export default function AboutPage() {
             Hi, I&apos;m Chef Lù
           </p>
           <h2
-            className="text-4xl md:text-5xl font-light text-[#1A1008] leading-tight mb-5"
+            className="text-4xl md:text-5xl font-light text-[#F0E0C0] leading-tight mb-5"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             I cook Nigerian food because I love it — and I want you to love it too.
           </h2>
-          <p className="text-[#7A6855] leading-relaxed mb-4">
+          <p className="text-[#B09070] leading-relaxed mb-4">
             I&apos;m a solo cook based in Texas, making authentic Nigerian food
             from scratch. No restaurant, no big team — just me, good ingredients,
             and recipes that have been passed down and perfected over time.
           </p>
-          <p className="text-[#7A6855] leading-relaxed mb-4">
+          <p className="text-[#B09070] leading-relaxed mb-4">
             I started taking orders because friends and family kept asking for
             trays every weekend, and it grew from there. Now I cook for people
             all over Dallas–Fort Worth and Houston who are craving real Nigerian
             food — whether they grew up with it or are trying it for the first time.
           </p>
-          <p className="text-[#7A6855] leading-relaxed mb-8">
+          <p className="text-[#B09070] leading-relaxed mb-8">
             Every order is made fresh to order. No pre-cooked shortcuts. You
             place the order, I cook it, and you pick it up or I get it to you.
             Simple as that.
@@ -82,11 +82,11 @@ export default function AboutPage() {
       </section>
 
       {/* ── Values ── */}
-      <section className="bg-[#E8D0B0] py-20">
+      <section className="bg-[#2A1808] py-20">
         <div className="max-w-6xl mx-auto px-5">
           <ScrollReveal>
             <h2
-              className="text-3xl md:text-4xl font-light text-[#1A1008] mb-12 text-center"
+              className="text-3xl md:text-4xl font-light text-[#F0E0C0] mb-12 text-center"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               What I care about
@@ -108,15 +108,15 @@ export default function AboutPage() {
               },
             ].map((v, i) => (
               <ScrollReveal key={v.title} delay={i * 100}>
-                <div className="bg-[#F5E8D2] rounded-2xl p-7 border border-[#D4B896]">
+                <div className="bg-[#F5E8D2] rounded-2xl p-7 border border-[#4E3018]">
                   <div className="w-8 h-1 bg-[#D95F2A] rounded-full mb-5" />
                   <h3
-                    className="text-xl font-medium text-[#1A1008] mb-2"
+                    className="text-xl font-medium text-[#F0E0C0] mb-2"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
                     {v.title}
                   </h3>
-                  <p className="text-sm text-[#7A6855] leading-relaxed">{v.desc}</p>
+                  <p className="text-sm text-[#B09070] leading-relaxed">{v.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -138,7 +138,7 @@ export default function AboutPage() {
               >
                 Dallas–Fort Worth & Houston, Texas
               </h2>
-              <p className="text-[#7A6855] leading-relaxed mb-6">
+              <p className="text-[#B09070] leading-relaxed mb-6">
                 I&apos;m based in Texas and serve both the DFW area and Houston.
                 Pickup is available from my location, and I can arrange delivery
                 within my service areas.
@@ -151,7 +151,7 @@ export default function AboutPage() {
                   { label: "Hours", value: "Mon–Sun" },
                 ].map(({ label, value }) => (
                   <div key={label} className="border-l-2 border-[#D95F2A] pl-3">
-                    <p className="text-[9px] tracking-widest uppercase text-[#7A6855] mb-0.5">{label}</p>
+                    <p className="text-[9px] tracking-widest uppercase text-[#B09070] mb-0.5">{label}</p>
                     <p className="text-sm text-white">{value}</p>
                   </div>
                 ))}

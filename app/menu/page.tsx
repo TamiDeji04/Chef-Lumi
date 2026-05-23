@@ -84,13 +84,13 @@ export default function MenuPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-[#F2E3CC]/65" />
+        <div className="absolute inset-0 bg-[#1E1005]/65" />
         <div className="relative z-10 max-w-6xl mx-auto px-5 pb-12 w-full">
           <p className="text-xs font-medium tracking-[0.2em] uppercase text-[#D95F2A] mb-2">
             What&apos;s Cooking
           </p>
           <h1
-            className="text-5xl md:text-6xl font-light text-[#1A1008]"
+            className="text-5xl md:text-6xl font-light text-[#F0E0C0]"
             style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
           >
             The Menu
@@ -101,9 +101,9 @@ export default function MenuPage() {
       {/* ── Intro ── */}
       <ScrollReveal>
         <div className="max-w-2xl mx-auto px-5 py-12 text-center">
-          <p className="text-[#7A6855] leading-relaxed">
-            Everything is available as a <strong className="text-[#1A1008]">full tray</strong> or{" "}
-            <strong className="text-[#1A1008]">half tray</strong>. All orders are freshly made —
+          <p className="text-[#B09070] leading-relaxed">
+            Everything is available as a <strong className="text-[#F0E0C0]">full tray</strong> or{" "}
+            <strong className="text-[#F0E0C0]">half tray</strong>. All orders are freshly made —
             give 24–48 hours notice and I&apos;ll have it ready for you.{" "}
             <Link href="/order" className="text-[#D95F2A] hover:underline font-medium">
               Place your order here.
@@ -117,7 +117,7 @@ export default function MenuPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {dishes.map((d, i) => (
             <ScrollReveal key={d.name} delay={i * 80}>
-              <div className="group rounded-2xl overflow-hidden border border-[#D4B896] bg-white hover:border-[#D95F2A]/40 transition-colors">
+              <div className="group rounded-2xl overflow-hidden border border-[#4E3018] bg-[#3A2410] hover:border-[#D95F2A]/40 transition-colors">
                 <div className="relative aspect-video overflow-hidden">
                   <Image
                     src={d.img}
@@ -132,21 +132,21 @@ export default function MenuPage() {
                 <div className="p-5">
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <h3
-                      className="text-xl font-medium text-[#1A1008]"
+                      className="text-xl font-medium text-[#F0E0C0]"
                       style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                     >
                       {d.name}
                     </h3>
                     <div className="flex gap-1.5 flex-shrink-0 pt-1">
-                      <span className="text-[9px] tracking-wider border border-[#D4B896] text-[#7A6855] px-2 py-0.5 rounded-full uppercase">
+                      <span className="text-[9px] tracking-wider border border-[#4E3018] text-[#B09070] px-2 py-0.5 rounded-full uppercase">
                         Half
                       </span>
-                      <span className="text-[9px] tracking-wider border border-[#D4B896] text-[#7A6855] px-2 py-0.5 rounded-full uppercase">
+                      <span className="text-[9px] tracking-wider border border-[#4E3018] text-[#B09070] px-2 py-0.5 rounded-full uppercase">
                         Full
                       </span>
                     </div>
                   </div>
-                  <p className="text-sm text-[#7A6855] leading-relaxed">{d.desc}</p>
+                  <p className="text-sm text-[#B09070] leading-relaxed">{d.desc}</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -166,11 +166,11 @@ export default function MenuPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="bg-[#E8D0B0] py-20">
+      <section className="bg-[#2A1808] py-20">
         <div className="max-w-2xl mx-auto px-5">
           <ScrollReveal>
             <h2
-              className="text-3xl md:text-4xl font-light text-[#1A1008] mb-10 text-center"
+              className="text-3xl md:text-4xl font-light text-[#F0E0C0] mb-10 text-center"
               style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
             >
               Good to Know
@@ -179,14 +179,14 @@ export default function MenuPage() {
           <div className="space-y-6">
             {faqs.map((faq, i) => (
               <ScrollReveal key={faq.q} delay={i * 80}>
-                <div className="bg-[#F5E8D2] rounded-2xl p-6 border border-[#D4B896]">
+                <div className="bg-[#F5E8D2] rounded-2xl p-6 border border-[#4E3018]">
                   <h4
-                    className="text-lg font-medium text-[#1A1008] mb-2"
+                    className="text-lg font-medium text-[#F0E0C0] mb-2"
                     style={{ fontFamily: "var(--font-cormorant), Georgia, serif" }}
                   >
                     {faq.q}
                   </h4>
-                  <p className="text-sm text-[#7A6855] leading-relaxed">{faq.a}</p>
+                  <p className="text-sm text-[#B09070] leading-relaxed">{faq.a}</p>
                 </div>
               </ScrollReveal>
             ))}
